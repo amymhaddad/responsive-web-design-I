@@ -1,3 +1,231 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* phone view  */
+.page-container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.intro-image {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.site-nav li {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    line-height: 1.4;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.title div h1{
+    padding: 2px;
+    margin: 2px;
+    font-size: 60px;
+}
+
+.title div button {
+    border: 1px solid black;
+    border-radius: -1px;
+    background-color: white;
+    height: 32px;
+    width: 80px;
+}
+
+.black-line {
+    border-bottom: 2px solid black;
+    padding-top: 13px;
+}
+
+.content {
+    text-align: left;
+}
+
+.code-image img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h1 {
+    margin-bottom: 2px;
+    padding-top: 11px;
+}
+
+.footer ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.footer ul li:nth-child(3), .footer ul li:last-child  {
+    margin-top: 8px;
+}
+
+.footer p {
+    text-align: center;
+}
 
 
+
+@media (max-width: 1100px) {
+    .title div img {
+        display: none;
+    }
+}
+
+/* Web view */
+@media screen and (min-width: 800px) {
+    .page-container {
+        width: 1200px;
+        margin: 20px;
+    }
+
+    .nav-bar {
+        display: flex;
+        width: 100%;
+    }
+
+    .intro-image {
+        order: 1;
+        margin: 0 auto;
+    }
+   
+    .site-nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin: none;
+        padding: none;
+        width: 60%; 
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .intro {
+        width: 40%;
+        padding-right: 40px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .intro h1:last-of-type {
+        padding-bottom: 32px;
+    }
+
+    .accent-picture {
+        text-align: right;
+        width: 40%;
+    }
+
+    .intro-key-points {
+        padding-left: 13px;
+    }
+}
+
+/* Tablet view - At a min width of 500px, this will apply */
+@media (min-width: 500px) {
+    .page-container {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .intro-image {
+        text-align: center;
+    }
+
+    .site-nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 83%;
+        font-size: 22px;
+    }
+
+    .site-nav li {
+        border-bottom: none;
+    }
+
+    li a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    li a:hover {
+        background-color: gainsboro;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title .intro div:last-of-type  {
+        padding-top: 15px;
+        padding-bottom: 38px;
+    }
+
+    .title .intro div button {
+        border: 1px solid black;
+        border-radius: -1px;
+        background-color: white;
+        height: 39px;
+        width: 196px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .intro-key-points {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-content {
+        display: flex;
+    }
+
+    .bottom-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        align-items: flex-start;
+    }
+
+    .footer ul li {
+        text-align: left;
+    }
+
+    .footer p {
+        align-self: center;
+        margin-top: -2px;
+    }
+
+    .footer ul li:nth-child(3), .footer ul li:last-child  {
+        margin-top: 15px;
+    }
+}
